@@ -12,6 +12,12 @@ Orí Essentials is a beauty brand rooted in African heritage, providing holistic
 
 ## 📁 Project Structure
 
+```
+📂 js-event-assignment/
+├── index.html         # All the basic structure of the site is here
+├── style.css          # The elements that add character to the site are located in this file
+└── script.js          # The JavaScript wizardry happens here
+```
 
 
 ---
