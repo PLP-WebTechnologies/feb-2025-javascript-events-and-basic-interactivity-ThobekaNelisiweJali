@@ -1,0 +1,140 @@
+
+//*HTML structure for the Orí Essentials website*//
+//*This code includes a navigation bar, sections for home, about, products, reviews, and contact, and a footer*//
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Orí Essentials</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    //*Navigation bar with buttons for each section of the page*//
+
+    <nav>
+      <ul>
+        <li><button class="nav-btn" onclick="showSection('home')">Home</button></li>
+        <li><button class="nav-btn" onclick="showSection('about')">About</button></li>
+        <li><button class="nav-btn" onclick="showSection('products')">Products</button></li>
+        <li><button class="nav-btn" onclick="showSection('reviews')">Reviews</button></li>
+        <li><button class="nav-btn" onclick="showSection('contact')">Contact</button></li>
+      </ul>
+    </nav>
+  </header>
+
+//*Main content area with sections for each part of the website*//
+
+
+  <main>
+    //*Home section with a video background and overlay content*//
+
+    <section id="home" class="page-section active home-video">
+        <video autoplay muted loop playsinline id="bg-video">
+          <source src="Get Perfect HAIRcare.mp4" type="video/mp4" />
+          Your browser does not support HTML5 video.
+        </video>
+      
+        <div class="overlay-content">
+          <h2>Welcome to Orí Essentials 🌿</h2>
+          <p>Experience the richness of African beauty through nature-powered hair care.</p>
+          <button id="magicBtn">Click Me</button>
+        </div>
+      </section>
+    
+      //*About section with a description of the brand and its mission*//
+
+      <section id="about" class="page-section">
+        <h2>About Us</h2>
+        <div class="about-content">
+          <p>
+            Rooted in the richness of African heritage, <strong>Orí Essentials</strong> is more than just a hair care brand — it's a celebration of natural beauty, culture, and wellness. Our name, “Orí,” draws from the Yoruba word for "head" or "consciousness," reflecting the sacred connection between self-care and identity.
+          </p>
+          <p>
+            We specialize in crafting <strong>holistic hair care solutions</strong> that nourish, protect, and strengthen your crown using time-honored ingredients like <strong>black castor oil</strong>, <strong>olive oil</strong>, <strong>chebe</strong>, <strong>amla</strong>, and <strong>shea butter</strong>. Every formulation is inspired by African traditions and refined with modern research to bring you products that truly work — naturally.
+          </p>
+          <p>
+            At Orí Essentials, we believe beauty is a ritual. Our products are lovingly created to support your hair journey — whether you’re embracing your coils, nurturing your edges, or simply seeking a more grounded, self-loving routine.
+          </p>
+          <ul>
+            <li>🌱 <strong>Natural Ingredients</strong>: No sulfates, no parabens — just plant-powered goodness.</li>
+            <li>👩🏽‍🦱 <strong>Empowering African Women</strong>: By honoring ancestral wisdom and promoting self-love through hair care.</li>
+            <li>🌍 <strong>Sustainability</strong>: Ethical sourcing and eco-friendly packaging because we care for the planet too.</li>
+          </ul>
+          <p>
+            Let Orí Essentials be part of your daily ritual — a journey of growth, beauty, and inner strength, starting from your roots.
+          </p>
+        </div>
+      </section>
+
+      //*Products section with a gallery of product images*//
+
+    <section id="products" class="page-section">
+      <h2>Our Products</h2>
+      <div class="gallery">
+        <img src="Product 1.jpg" alt="Product 1" />
+        <img src="Product 2.jpg" alt="Product 2" />
+        <img src="Product 3.jpg" alt="Product 3" />
+        <img src="Product 4.jpg" alt="Product 4" />
+        <img src="Product 5.jpg" alt="Product 5" />
+        <img src="Product 6.jpg" alt="Product 6" />
+      </div>
+    </section>
+
+    //*Reviews section with customer testimonials*//
+
+    <section id="reviews" class="page-section">
+        <h2>Customer Reviews</h2>
+        <div class="reviews-grid">
+          <div class="review-card">
+            <p>“My hair has never felt this healthy. The growth is real!”</p>
+            <h4>- Amina T.</h4>
+          </div>
+          <div class="review-card">
+            <p>“Absolutely love the natural scent and texture. 10/10!”</p>
+            <h4>- Lindiwe M.</h4>
+          </div>
+          <div class="review-card">
+            <p>“Even my edges are coming back! Thank you Orí Essentials.”</p>
+            <h4>- Zanele K.</h4>
+          </div>
+          <div class="review-card">
+            <p>“I’ve been recommending this to all my sisters. It works!”</p>
+            <h4>- Thando B.</h4>
+          </div>
+          <div class="review-card">
+            <p>“No more breakage. My hair is thriving and moisturized.”</p>
+            <h4>- Ama A.</h4>
+          </div>
+          <div class="review-card">
+            <p>“I use the mask weekly, and the difference is night and day.”</p>
+            <h4>- Nia O.</h4>
+          </div>
+        </div>
+      </section>
+
+      //*Contact section with a form for inquiries*//
+
+    <section id="contact" class="page-section">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label>Name:<input type="text" id="name" required /></label>
+        <label>Email:<input type="email" id="email" required /></label>
+        <label>Password:<input type="password" id="password" required /></label>
+        <button type="submit">Send</button>
+        <p id="formMessage"></p>
+      </form>
+    </section>
+  </main>
+
+  //*Footer with copyright information*//
+
+  <footer>
+    <p>© 2025 Orí Essentials. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script> //*JavaScript file for interactivity*//
+</body>
+</html>
